@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,1000&family=PT+Serif&family=Young+Serif&display=swap');
+
+p{
+color: wheat;
+font-family: "Mulish";
+}
+
+body {
+    /** Ruta de la imagen */
+    background-image: url('../assets/imgs/siuuu.jpg');
+    /** Cubrir toda el área del body */
+    background-size: cover;
+    /** Evitar que la imagen se repita */
+    background-repeat: no-repeat;
+    /** Hacer que la imagen este fija */
+    background-attachment: fixed;
+
+}
+
+@keyframes moverImagen {
+    from {
+        transform: translateX(-100);
+    }
+    to{
+        transform: translateX(1000%);
+    }   
+}
+
+.micochecito{
+    width: 150px;
+    height: 100px;
+    background-image: url(../assets/imgs/download.png);
+    background-size: cover;
+    animation: moverImagen 4s linear infinite;
+}
